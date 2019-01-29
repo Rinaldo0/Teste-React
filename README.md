@@ -1,4 +1,5 @@
 
+### Antes de rodar o projeto instale as dependecias `npm install`
 
 ### `npm start`
 
