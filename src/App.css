@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.bg-color{
+  background-color: #e9ecef;
+  border-radius: 1%;
+  box-shadow: #6c757d 3px 5px 6px;
+  width: 50vw;
+
+}
+@media only screen and (max-width: 668px){
+  .bg-color{
+    width:100vw;
+  }
+}
+.align-center{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.picture{
+  margin-top: 1vh;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+  justify-content: flex-start;
+  display: flex;
+  border: solid 4px #dc3545;
+
+}
+.name{
+  text-align: center;
+  align-items: center;
+  margin-top: -8vh;
+  font-family: 'Montserrat', serif;
+  font-size: 26px;
+  color: #dc3545;
+  
+}
+
+.picture:hover, .bg-cor:hover{
+  border: solid 4px #e9ecef;
+  background-color: #dc3545;
+  cursor: pointer;
+}
+.name:hover{
+  color:#e9ecef;
+}
+
+.descricao{
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  font-size: 15px;
+  color: #6c757d;
+}
+
+
+
+.caixa_de_porcentagem{
+
+  width: 200px;
+  height: 90px;
+  float: right;
+  position: absolute;
+  margin-left: 105%;
+  background: linear-gradient(180deg, #dc3545  32%, #e9ecef 32%);
+  padding-top: 40px;
+  border-radius: 5%;
+  box-shadow: #6c757d 3px 5px 6px;
+}
+.caixa_de_porcentagem::after{
+  content: 'GOSTAM';
+  font-family: 'Montserrat', serif;
+  color:#e9ecef;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: -60px;
+  float: left;
+  margin-left: 13px;
+  display: flex;
+  
+}
+.caixa_de_porcentagem::before{
+  content: 'NÃO GOSTAM';
+  color:#e9ecef;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: 'Montserrat', serif;
+  margin-top: -37px;
+  float: right;
+  margin-right: 10px;
+  display: flex;
+}
